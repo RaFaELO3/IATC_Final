@@ -72,6 +72,13 @@
     line-height: 2;
 }
 
+.vertical-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .container-fluid .navbar-brand{
     width: 64px;
 }
@@ -133,7 +140,7 @@
 /* Cover Section */
 .cover-section{
     background-image: url("../../images/cover.jpg");
-    height: 105vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
 }
@@ -143,7 +150,7 @@
    font-weight: normal;
 }
 
-.cover-section .d-flex > *{
+.cover-section .vertical-center > *{
     margin:10px auto;
     font-size: 1.125rem;
     line-height: 2;
@@ -204,20 +211,40 @@
 
 .card-section .cards .arrow-icon{
     fill: var(--green-color);
+    stroke: var(--green-color);
+    stroke-width: 17px;
     width: 48px;
-    height: 48px;
     margin: 0 auto;
 }
 
 .card-section .cards .card:nth-child(2) .arrow-icon{
     fill: white;
+    stroke: white;
 }
 
 /* Welcome-Section */
 
 .welcome-section .section-content{
-    border-left: 30px solid var(--green-color);
-    border-right: 30px solid var(--green-color);
+    /* border-left: 30px solid var(--green-color);
+    border-right: 30px solid var(--green-color); */
+    position: relative;
+}
+
+.welcome-section .section-content::before,.welcome-section .section-content::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height:452px;
+    background-color: var(--green-color);
+    bottom: 0;
+}
+
+.welcome-section .section-content::before {
+    left: 0;
+}
+
+.welcome-section .section-content::after {
+    right: 0;
 }
 
 .welcome-section .content-header h1{
@@ -292,21 +319,27 @@
     line-height: 1.2;
 }
 
-.program-section .row .col-md-3:first-child *{
+.program-section .row .col-md-4:first-child *{
     text-align: start;
 }
 
-.program-section .row .col-md-3:first-child h4{
+.program-section .row .col-md-4:first-child h4{
     font-size: 1.875rem;
 }
 
-.program-section .row .col-md-3:first-child span{
+.program-section .row .col-md-4:first-child span{
     font-size: 1.5rem;
 }
 
-.program-section .row .col-md-3:last-child h4{
+.program-section .row .col-md-4:first-child p{
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+.program-section .row .counter,.program-section .row .counter-percent{
     font-size: 3rem;
 }
+
 
 .program-section .row .col-md-3 p{
     font-size: 1.125rem;
@@ -398,6 +431,11 @@
     padding-left: 1.5em;
 }
 
+.contact-section ul li{
+    font-size: 1.25rem;
+    line-height: 2;
+}
+
 .contact-section ul li::before{
     content: '✓';
 }
@@ -411,4 +449,23 @@
 
 .contact-btn:hover{
     background-color: #292e33;
+}
+
+/* Media Query*/
+
+@media (max-width: 991px){
+    .cover-section h1{
+        font-size: 2.625rem;
+    }
+}
+
+
+@media (max-width: 575px){
+    .cover-section h1{
+        font-size: 2.25rem;
+    }
+
+    .learn-section h4{
+        font-size: 1.875rem;
+    }
 }
