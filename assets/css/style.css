@@ -1,5 +1,9 @@
 @import url(root.css);
 
+/*======================================
+    Constants
+======================================*/
+
 *{
     margin: 0;
     padding: 0;
@@ -58,6 +62,7 @@
 
 .white-button{
     border: 4px solid white;
+    padding: 15px 46px 16px;
 }
 
 .content-header > *{
@@ -78,6 +83,13 @@
     justify-content: center;
 }
 
+.section-header{
+    font-size:3.75rem;
+}
+
+/*======================================
+    Navbar
+======================================*/
 
 .container-fluid .navbar-brand{
     width: 64px;
@@ -137,7 +149,10 @@
     color: #a1a1a1;
 }
 
-/* Cover Section */
+/*======================================
+    Cover Section
+======================================*/
+
 .cover-section{
     background-image: url("../../images/cover.jpg");
     height: 100vh;
@@ -146,7 +161,6 @@
 }
 
 .cover-section h1{
-   font-size: 3.75rem;
    font-weight: normal;
 }
 
@@ -171,7 +185,9 @@
     background-color: var(--green-color)!important;
 }
 
-/* Card-Section */
+/*======================================
+    Card Section
+======================================*/
 
 .cards .card{
     padding: 30px 23px;
@@ -222,7 +238,9 @@
     stroke: white;
 }
 
-/* Welcome-Section */
+/*======================================
+    Welcome Section
+======================================*/
 
 .welcome-section .section-content{
     /* border-left: 30px solid var(--green-color);
@@ -247,7 +265,7 @@
     right: 0;
 }
 
-.welcome-section .content-header h1{
+.welcome-section .section-header{
     font-size: 3rem;
 }
 
@@ -257,12 +275,9 @@
     margin: 41px auto;
 }
 
-/* benefit section */
-
-.benefit-section .content-header h2{
-    font-size: 3.75rem;
-}
-
+/*======================================
+    Benefit Section
+======================================*/
 
 .benefit-section .cards .card{
     background-color:white;
@@ -288,15 +303,14 @@
     font-weight: 700;
 }
 
-/* Coach Section */
+
+/*======================================
+    Coach Section
+======================================*/
 
 .coach-section{
     background-image: linear-gradient(0deg, rgba(36,63,86,0.85), rgba(36,63,86,0.85)), url(../../images/coachBG.jpg);
     background-position: 50% 50%;
-}
-
-.coach-section .content-header h1{
-    font-size: 60px;
 }
 
 .coach-section .content-body p{
@@ -304,11 +318,13 @@
     margin: 30px 13%;
 }
 
-.coach-section .content-body a{
-    width: 20%;
+.coach-section .content-body .d-flex-inline a{
+    margin: 0 10px 20px 0;
 }
 
-/* Program Section */
+/*======================================
+    Program Section
+======================================*/
 
 .program-button:hover{
     background-color:var(--dark-color)!important;
@@ -323,7 +339,7 @@
     text-align: start;
 }
 
-.program-section .row .col-md-4:first-child h4{
+.program-section .section-header{
     font-size: 1.875rem;
 }
 
@@ -347,16 +363,14 @@
 }
 
 
-/* Learn Section */
+/*======================================
+    Learn Section
+======================================*/
 
 .learn-section{
     background-image: linear-gradient(0deg, rgba(36,63,86,0.65), rgba(36,63,86,0.65)), url(../../images/learnSectionBg.jpg);
     background-position: 50% 50%;
     font-family: var(--family-M);
-}
-
-.learn-section h4{
-    font-size: 3.75rem;
 }
 
 .learn-section .row:nth-child(1) p{
@@ -382,9 +396,12 @@
     font-weight: 700;
 }
 
-/* Team section */
 
-.team-section .content-header h2{
+/*======================================
+    Team Section
+======================================*/
+
+.team-section .section-header{
     font-size: 3rem;
 }
 
@@ -412,9 +429,16 @@
     font-weight: 300;
 }
 
-/* Contact Section */
+/*======================================
+    Contact Section
+======================================*/
 
-.contact-section .content-header h2{
+.contact-section input{
+    padding: 10px 12px;
+    margin-bottom: 13px;
+}
+
+.contact-section .section-header{
     font-size: 2.25rem;
 }
 
@@ -451,21 +475,35 @@
     background-color: #292e33;
 }
 
-/* Media Query*/
+/*======================================
+    Media Queries
+======================================*/
 
 @media (max-width: 991px){
-    .cover-section h1{
+    .cover-section .section-header{
         font-size: 2.625rem;
+    }
+
+    .contact-section .content-body p{
+        font-size: 1.375rem;
     }
 }
 
 
 @media (max-width: 575px){
-    .cover-section h1{
+    .cover-section .section-header{
         font-size: 2.25rem;
     }
 
-    .learn-section h4{
+    .welcome-section .section-header,
+    .benefit-section .section-header,
+    .coach-section .section-header,
+    .learn-section .section-header,
+    .team-section .section-header{
         font-size: 1.875rem;
+    }
+
+    .contact-section .vertical-center{
+        justify-content: start;
     }
 }
