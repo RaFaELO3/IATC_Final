@@ -25,11 +25,11 @@
   <!-- ===== Header Start ===== -->
   <header>
     <nav class="navbar">
-      <div class="container-fluid mx-5 py-2 px-5">
+      <div class="container mx-3 py-2">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" class="header-logo" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -76,89 +76,98 @@
       </div>
     </div>
   </section>
+
   <!-- ===== Card Section Start ===== -->
   <section class="section card-section">
-    <div class="container-fluid">
-      <div class="row cards justify-content-center text-center mx-3">
+    <div class="container">
+      <div class="row cards justify-content-evenly text-center mx-4">
 
-        <!-- Card 1 -->
-        <div class="col-md-5 col-lg-3 col-sm-6 col-12 card mx-lg-3 mx-md-3 mx-1 dark-bg radius-20" data-aos="fade-up" data-aos-duration="1500">
-          <div class="card-icon">
-            <svg class="icon radius-20" viewBox="0 0 512 512">
-              <g>
-                <path
-                  d="m193.29 395.63c-42.64 0-77.33-34.69-77.33-77.33v-25.59c-62.506-3.875-116.177 46.692-115.959 109.34 0 60.4 49.14 109.53 109.53 109.53 62.65.217 113.214-53.436 109.34-115.95z">
-                </path>
-                <path
-                  d="m262.94 146.56h-69.65c-26.1 0-47.33 21.24-47.33 47.33-.042 16.556.03 110.208 0 124.41 0 26.09 21.23 47.33 47.33 47.33 14.916-.029 107.366.021 124.4 0 26.1 0 47.33-21.24 47.33-47.33v-68.81h-102.08z">
-                </path>
-                <path d="m292.94.42v219.07h219.06v-219.07z"></path>
-              </g>
-            </svg>
-          </div>
-          <div class="card-header">
-            <h4>Visualize it</h4>
-          </div>
-          <div class="card-body">
-            <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" preserveAspectRatio="xMidYMid meet"
-            viewBox="0 0 256 256">
-            <path
-              d="m224.5 136.5l-72 72a12.1 12.1 0 0 1-17 0a12 12 0 0 1 0-17L187 140H40a12 12 0 0 1 0-24h147l-51.5-51.5a12 12 0 0 1 17-17l72 72a12 12 0 0 1 0 17Z" />
-          </svg>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-md-5 col-lg-3 col-sm-6 col-12 card mx-lg-3 mx-md-3 mx-1 green-bg radius-20" data-aos="fade-up" data-aos-duration="1500"  data-aos-delay="250">
-          <div class="card-icon">
-            <svg class="icon radius-20" viewBox="0 0 512.001 512.001" x="0px" y="0px">
-              <g>
+        <!-- ===== Card 1 ===== -->
+        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500">
+          <div class="card dark-bg">
+            <div class="card-icon">
+              <svg class="icon radius-20" viewBox="0 0 512 512">
                 <g>
                   <path
-                    d="M502.979,317.996L230.502,199.598c26.679-30.977,43.37-68.952,48.104-109.598h16.395c8.284,0,15-6.716,15-15V15    c0-8.284-6.716-15-15-15h-60c-8.284,0-15,6.716-15,15v60c0,8.284,6.716,15,15,15h13.362    c-5.335,38.976-23.597,74.898-52.382,102.447c-29.08,27.831-66.261,44.536-105.98,47.907v-9.265c0-8.284-6.716-15-15-15h-60    c-8.284,0-15,6.716-15,15v60c0,8.284,6.716,15,15,15h60c8.284,0,15-6.716,15-15v-20.631    c39.772-2.876,77.462-17.167,109.042-41.233l118.953,273.754c2.391,5.5,7.81,9.022,13.753,9.022c0.283,0,0.567-0.008,0.853-0.024    c6.272-0.355,11.659-4.582,13.496-10.589l27.229-89.03c5.725-18.716,20.315-33.307,39.03-39.031l89.03-27.229    c6.008-1.837,10.234-7.224,10.589-13.497C512.332,326.329,508.741,320.5,502.979,317.996z">
+                    d="m193.29 395.63c-42.64 0-77.33-34.69-77.33-77.33v-25.59c-62.506-3.875-116.177 46.692-115.959 109.34 0 60.4 49.14 109.53 109.53 109.53 62.65.217 113.214-53.436 109.34-115.95z">
                   </path>
+                  <path
+                    d="m262.94 146.56h-69.65c-26.1 0-47.33 21.24-47.33 47.33-.042 16.556.03 110.208 0 124.41 0 26.09 21.23 47.33 47.33 47.33 14.916-.029 107.366.021 124.4 0 26.1 0 47.33-21.24 47.33-47.33v-68.81h-102.08z">
+                  </path>
+                  <path d="m292.94.42v219.07h219.06v-219.07z"></path>
                 </g>
-              </g>
-            </svg>
-          </div>
-          <div class="card-header">
-            <h4>Create it</h4>
-          </div>
-          <div class="card-body">
-            <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" preserveAspectRatio="xMidYMid meet"
-            viewBox="0 0 256 256">
-            <path
-              d="m224.5 136.5l-72 72a12.1 12.1 0 0 1-17 0a12 12 0 0 1 0-17L187 140H40a12 12 0 0 1 0-24h147l-51.5-51.5a12 12 0 0 1 17-17l72 72a12 12 0 0 1 0 17Z" />
-          </svg>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-md-5 col-lg-3 col-sm-6 col-12 card mx-lg-3 mx-md-3 mx-1 dark-bg radius-20" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-          <div class="card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon radius-20" preserveAspectRatio="xMidYMid meet"
+              </svg>
+            </div>
+            <div class="card-header">
+              <h4>Visualize it</h4>
+            </div>
+            <div class="card-body">
+              <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 256 256">
               <path
-                d="M232 208a8 8 0 0 1-8 8H32a8 8 0 0 1-8-8V48a8 8 0 0 1 16 0v108.7l50.3-50.4a8.1 8.1 0 0 1 11.4 0l26.3 26.4L188.7 72H168a8 8 0 0 1 0-16h40a8 8 0 0 1 8 8v40a8 8 0 0 1-16 0V83.3l-66.3 66.4a8.1 8.1 0 0 1-11.4 0L96 123.3l-56 56V200h184a8 8 0 0 1 8 8Z" />
+                d="m224.5 136.5l-72 72a12.1 12.1 0 0 1-17 0a12 12 0 0 1 0-17L187 140H40a12 12 0 0 1 0-24h147l-51.5-51.5a12 12 0 0 1 17-17l72 72a12 12 0 0 1 0 17Z" />
             </svg>
           </div>
-          <div class="card-header">
-            <h4>Grow it</h4>
-          </div>
-          <div class="card-body">
-            <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" preserveAspectRatio="xMidYMid meet"
-            viewBox="0 0 256 256">
-            <path
-              d="m224.5 136.5l-72 72a12.1 12.1 0 0 1-17 0a12 12 0 0 1 0-17L187 140H40a12 12 0 0 1 0-24h147l-51.5-51.5a12 12 0 0 1 17-17l72 72a12 12 0 0 1 0 17Z" />
-          </svg>
         </div>
+
+        <!-- ===== Card 2 ===== -->
+        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500"  data-aos-delay="250">
+          <div class="card green-bg">
+            <div class="card-icon">
+              <svg class="icon radius-20" viewBox="0 0 512.001 512.001" x="0px" y="0px">
+                <g>
+                  <g>
+                    <path
+                      d="M502.979,317.996L230.502,199.598c26.679-30.977,43.37-68.952,48.104-109.598h16.395c8.284,0,15-6.716,15-15V15    c0-8.284-6.716-15-15-15h-60c-8.284,0-15,6.716-15,15v60c0,8.284,6.716,15,15,15h13.362    c-5.335,38.976-23.597,74.898-52.382,102.447c-29.08,27.831-66.261,44.536-105.98,47.907v-9.265c0-8.284-6.716-15-15-15h-60    c-8.284,0-15,6.716-15,15v60c0,8.284,6.716,15,15,15h60c8.284,0,15-6.716,15-15v-20.631    c39.772-2.876,77.462-17.167,109.042-41.233l118.953,273.754c2.391,5.5,7.81,9.022,13.753,9.022c0.283,0,0.567-0.008,0.853-0.024    c6.272-0.355,11.659-4.582,13.496-10.589l27.229-89.03c5.725-18.716,20.315-33.307,39.03-39.031l89.03-27.229    c6.008-1.837,10.234-7.224,10.589-13.497C512.332,326.329,508.741,320.5,502.979,317.996z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="card-header">
+              <h4>Create it</h4>
+            </div>
+            <div class="card-body">
+              <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 256 256">
+              <path
+                d="m224.5 136.5l-72 72a12.1 12.1 0 0 1-17 0a12 12 0 0 1 0-17L187 140H40a12 12 0 0 1 0-24h147l-51.5-51.5a12 12 0 0 1 17-17l72 72a12 12 0 0 1 0 17Z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- ===== Card 3 ===== -->
+        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+          <div class="card  dark-bg">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon radius-20" preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 256 256">
+                <path
+                  d="M232 208a8 8 0 0 1-8 8H32a8 8 0 0 1-8-8V48a8 8 0 0 1 16 0v108.7l50.3-50.4a8.1 8.1 0 0 1 11.4 0l26.3 26.4L188.7 72H168a8 8 0 0 1 0-16h40a8 8 0 0 1 8 8v40a8 8 0 0 1-16 0V83.3l-66.3 66.4a8.1 8.1 0 0 1-11.4 0L96 123.3l-56 56V200h184a8 8 0 0 1 8 8Z" />
+              </svg>
+            </div>
+            <div class="card-header">
+              <h4>Grow it</h4>
+            </div>
+            <div class="card-body">
+              <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 256 256">
+              <path
+                d="m224.5 136.5l-72 72a12.1 12.1 0 0 1-17 0a12 12 0 0 1 0-17L187 140H40a12 12 0 0 1 0-24h147l-51.5-51.5a12 12 0 0 1 17-17l72 72a12 12 0 0 1 0 17Z" />
+            </svg>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
+
   <!-- ===== Welcome Section Start ===== -->
   <section class="section welcome-section text-center dark-bg text-white">
     <div class="section-content">
@@ -174,6 +183,7 @@
       </div>
     </div>
   </section>
+
   <!-- ===== Benefit Section Start ===== -->
   <section class="section benefit-section">
     <div class="container">
@@ -184,32 +194,37 @@
         <div class="row cards justify-content-center text-center">
 
           <!-- Card 1 -->
-          <div class="col-sm-12 col-md-6 col-lg-4 card radius-20" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-            <div class="card-header mt-0">
-              <span class="card-num">01</span>
-              <h4>Hight Quality</h4>
-            </div>
-            <div class="card-body">
-              <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum.
-                Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+          <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+            <div class="card">
+              <div class="card-header mt-0">
+                <span class="card-num">01</span>
+                <h4>Hight Quality</h4>
+              </div>
+              <div class="card-body">
+                <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum.
+                  Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+              </div>
             </div>
           </div>
 
           <!-- Card 2 -->
-          <div class="col-sm-12 col-md-6 col-lg-4 card radius-20 green-bg" data-aos="fade-up" data-aos-duration="1500">
-            <div class="card-header mt-0">
-              <span class="card-num">02</span>
-              <h4>Creative Team</h4>
-            </div>
-            <div class="card-body">
-              <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum.
-                Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+          <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500">
+            <div class="card green-bg">
+              <div class="card-header mt-0">
+                <span class="card-num">02</span>
+                <h4>Creative Team</h4>
+              </div>
+              <div class="card-body">
+                <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum.
+                  Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+              </div>
             </div>
           </div>
 
           <!-- Card 3 -->
-          <div class="col-sm-12 col-md-6 col-lg-4 card radius-20" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-            <div class="card-header mt-0">
+          <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+            <div class="card">
+              <div class="card-header mt-0">
               <span class="card-num">03</span>
               <h4>Amazing Results</h4>
             </div>
@@ -217,11 +232,13 @@
               <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum.
                 Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
             </div>
+            </div>
           </div>
 
           <!-- Card 4 -->
-          <div class="col-sm-12 col-md-6 col-lg-4 card radius-20 dark-bg" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-            <div class="card-header mt-0">
+          <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+            <div class="card dark-bg">
+              <div class="card-header mt-0">
               <span class="card-num">04</span>
               <h4>Best Pricing</h4>
             </div>
@@ -229,11 +246,13 @@
               <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum.
                 Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
             </div>
+            </div>
           </div>
 
           <!-- Card 5 -->
-          <div class="col-sm-12 col-md-6 col-lg-4 card radius-20" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-            <div class="card-header mt-0">
+          <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+            <div class="card">
+              <div class="card-header mt-0">
               <span class="card-num">05</span>
               <h4>Innovations</h4>
             </div>
@@ -241,11 +260,13 @@
               <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum.
                 Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
             </div>
+            </div>
           </div>
 
           <!-- Card 6 -->
-          <div class="col-sm-12 col-md-6 col-lg-4 card radius-20 dark-bg" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-            <div class="card-header mt-0">
+          <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+            <div class="card dark-bg">
+              <div class="card-header mt-0">
               <span class="card-num">06</span>
               <h4>24/7 Support</h4>
             </div>
@@ -253,11 +274,13 @@
               <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum.
                 Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
             </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <!-- ===== Coach Section Start ===== -->
   <section class="section coach-section">
     <div class="container py-5">
@@ -277,6 +300,7 @@
       </div>
     </div>
   </section>
+
   <!-- ===== Program Section Start ===== -->
   <section class="section program-section">
     <div class="container py-5">
@@ -320,6 +344,7 @@
       </div>
     </div>
   </section>
+
   <!-- ===== Learn Section Start ===== -->
   <section class="section learn-section">
     <div class="container px-5">
@@ -368,6 +393,7 @@
       </div>
     </div>
   </section>
+
   <!-- ===== Team Section Start ===== -->
   <section class="section team-section">
     <div class="container-fluid text-center">
@@ -427,6 +453,7 @@
       <span class="freepik">Image by <a href="#" class="text-decoration-underline">Freepik</a></span>
     </div>
   </section>
+
   <!-- ===== Contact Section Start ===== -->
   <section class="section contact-section green-bg text-white">
     <div class="container">

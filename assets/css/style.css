@@ -91,7 +91,11 @@
     Navbar
 ======================================*/
 
-.container-fluid .navbar-brand{
+.navbar .container{
+    justify-content: unset;
+}
+
+.container .navbar-brand{
     width: 64px;
 }
 
@@ -193,6 +197,7 @@
     padding: 30px 23px;
     color: white;
     margin-bottom: 15px;
+    border-radius: 20px;
 }
 
 .card-section .cards .card .card-icon{
@@ -233,7 +238,7 @@
     margin: 0 auto;
 }
 
-.card-section .cards .card:nth-child(2) .arrow-icon{
+.card-section .cards .card.green-bg .arrow-icon{
     fill: white;
     stroke: white;
 }
@@ -284,9 +289,11 @@
     color: var(--dark-color);
     border: none;
     padding-top:0 ;
-    padding-bottom:0;
 }
 
+.benefit-section .card-body{
+    padding:0;
+}
 
 .benefit-section .cards .card p{
     color: #808080 ;
@@ -294,7 +301,7 @@
     line-height: 1.8;
 }
 
-.benefit-section .cards .card:nth-child(even) *{
+.benefit-section .cards > div:nth-child(even) *{
     color: white;
 }
 
@@ -493,6 +500,10 @@
 @media (max-width: 575px){
     .cover-section .section-header{
         font-size: 2.25rem;
+    }
+
+   .welcome-section .content-body p{
+        width: 75%;
     }
 
     .welcome-section .section-header,
