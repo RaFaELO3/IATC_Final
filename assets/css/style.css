@@ -4,48 +4,53 @@
     Constants
 ======================================*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-* a{
+* a {
     text-decoration: none;
     color: black;
 }
 
-.section{
-    padding: 4rem 0;
+html {
+    scroll-behavior: smooth;
 }
 
-.green-bg{
+.section {
+    padding: 4rem 0;
+    position: relative;
+}
+
+.green-bg {
     background-color: var(--green-color) !important;
 }
 
-.green-text{
+.green-text {
     color: var(--green-color) !important;
 }
 
-.dark-bg{
+.dark-bg {
     background-color: var(--dark-color) !important;
 }
 
-.dark-text{
+.dark-text {
     color: var(--dark-color) !important;
 }
 
-.radius-50{
+.radius-50 {
     border-radius: 50px;
 }
 
-.radius-20{
+.radius-20 {
     border-radius: 20px;
 }
 
-.button{
+.button {
     font-family: var(--family-OS);
-    font-size:1.125rem;
+    font-size: 1.125rem;
     color: white;
     border-radius: 50px;
     text-transform: uppercase;
@@ -54,102 +59,104 @@
     border: 4px solid var(--green-color);
 }
 
-.button:hover{
+.button:hover {
     background-color: white !important;
     color: var(--dark-color);
     border: 4px solid white;
 }
 
-.white-button{
+.white-button {
     border: 4px solid white;
     padding: 15px 46px 16px;
 }
 
-.content-header > *{
+.content-header>* {
     font-family: var(--family-M);
-    line-height: 1.1!important; /*Important diqqet*/
+    line-height: 1.1 !important;
+    /*Important diqqet*/
     text-align: center;
     font-weight: 700;
 }
 
-.content-body{
+.content-body {
     font-family: var(--family-OS);
     line-height: 2;
 }
 
-.vertical-center{
+.vertical-center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.section-header{
-    font-size:3.75rem;
+.section-header {
+    font-size: 3.75rem;
 }
 
 /*======================================
     Navbar
 ======================================*/
 
-.navbar .container{
+.navbar .container {
     justify-content: unset;
 }
 
-.container .navbar-brand{
+.container .navbar-brand {
     width: 64px;
 }
 
-.header-logo{
+.header-logo {
     width: 100%;
     height: 100%;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: none;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     box-shadow: none;
 }
 
-.navbar-toggler-icon{
-    background-image : url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 }
 
-.navbar-toggler-icon:hover{
-    background-image : url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+.navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 }
 
-.offcanvas{
-    width: 250px!important;
-    background-color: rgba(0,0,0,0.9);
+.offcanvas {
+    width: 250px !important;
+    background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
 }
 
-.offcanvas-header{
+.offcanvas-header {
     padding: 0;
 }
 
-.offcanvas .btn-close{
+.offcanvas .btn-close {
     padding: 30px;
     font-size: 21px;
     opacity: 1;
 }
 
-.offcanvas .btn-close:focus{
+.offcanvas .btn-close:focus {
     box-shadow: none;
 }
 
-.nav-item{
+.nav-item {
     height: 2.25rem;
 }
 
-.nav-item .nav-link,.navbar-nav .nav-link.active{
+.nav-item .nav-link,
+.navbar-nav .nav-link.active {
     color: white;
     font-size: 1.25rem;
 }
 
-.nav-item .nav-link:hover{
+.nav-item .nav-link:hover {
     color: #a1a1a1;
 }
 
@@ -157,80 +164,80 @@
     Cover Section
 ======================================*/
 
-.cover-section{
+.cover-section {
     background-image: url("../../images/cover.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
 }
 
-.cover-section h1{
-   font-weight: normal;
+.cover-section h1 {
+    font-weight: normal;
 }
 
-.cover-section .vertical-center > *{
-    margin:10px auto;
+.cover-section .vertical-center>* {
+    margin: 10px auto;
     font-size: 1.125rem;
     line-height: 2;
 
 }
 
-.freepik{
+.freepik {
     font-size: 18px;
     font-family: var(--family-OS);
 }
 
-.cover-btn{
+.cover-btn {
     padding: 19px 47px 20px;
 }
 
-.cover-btn:hover{
-    color: white!important;
-    background-color: var(--green-color)!important;
+.cover-btn:hover {
+    color: white !important;
+    background-color: var(--green-color) !important;
 }
 
 /*======================================
     Card Section
 ======================================*/
 
-.cards .card{
+.cards .card {
     padding: 30px 23px;
     color: white;
     margin-bottom: 15px;
     border-radius: 20px;
 }
 
-.card-section .cards .card .card-icon{
+.card-section .cards .card .card-icon {
     width: 87px;
     height: 87px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.card-section .cards .card-icon .icon{
+.card-section .cards .card-icon .icon {
     fill: var(--green-color);
     background-color: white;
     padding: 14px;
 }
 
-.cards .card-header{
+.cards .card-header {
     border: none;
-    background-color:transparent;
+    background-color: transparent;
     font-family: var(--family-M);
     margin-top: 30px;
 }
 
-.card-section .cards .card-header h4{
+.card-section .cards .card-header h4 {
     font-weight: bold;
     font-size: 1.875rem;
 }
 
-.card-section .cards .card-body{
+.card-section .cards .card-body {
     font-family: var(--family-OS);
     font-size: 1.125rem;
     line-height: 1.8;
 }
 
-.card-section .cards .arrow-icon{
+.card-section .cards .arrow-icon {
     fill: var(--green-color);
     stroke: var(--green-color);
     stroke-width: 17px;
@@ -238,7 +245,7 @@
     margin: 0 auto;
 }
 
-.card-section .cards .card.green-bg .arrow-icon{
+.card-section .cards .card.green-bg .arrow-icon {
     fill: white;
     stroke: white;
 }
@@ -247,17 +254,18 @@
     Welcome Section
 ======================================*/
 
-.welcome-section .section-content{
+.welcome-section .section-content {
     /* border-left: 30px solid var(--green-color);
     border-right: 30px solid var(--green-color); */
     position: relative;
 }
 
-.welcome-section .section-content::before,.welcome-section .section-content::after {
+.welcome-section .section-content::before,
+.welcome-section .section-content::after {
     content: '';
     position: absolute;
     width: 30px;
-    height:452px;
+    height: 452px;
     background-color: var(--green-color);
     bottom: 0;
 }
@@ -270,11 +278,11 @@
     right: 0;
 }
 
-.welcome-section .section-header{
+.welcome-section .section-header {
     font-size: 3rem;
 }
 
-.welcome-section .content-body p{
+.welcome-section .content-body p {
     width: 55%;
     font-size: 1.25rem;
     margin: 41px auto;
@@ -284,28 +292,28 @@
     Benefit Section
 ======================================*/
 
-.benefit-section .cards .card{
-    background-color:white;
+.benefit-section .cards .card {
+    background-color: white;
     color: var(--dark-color);
     border: none;
-    padding-top:0 ;
+    padding-top: 0;
 }
 
-.benefit-section .card-body{
-    padding:0;
+.benefit-section .card-body {
+    padding: 0;
 }
 
-.benefit-section .cards .card p{
-    color: #808080 ;
+.benefit-section .cards .card p {
+    color: #808080;
     font-size: 1.125rem;
     line-height: 1.8;
 }
 
-.benefit-section .cards > div:nth-child(even) *{
+.benefit-section .cards>div:nth-child(even) * {
     color: white;
 }
 
-.card-num{
+.card-num {
     font-size: 3rem;
     font-weight: 700;
 }
@@ -315,17 +323,17 @@
     Coach Section
 ======================================*/
 
-.coach-section{
-    background-image: linear-gradient(0deg, rgba(36,63,86,0.85), rgba(36,63,86,0.85)), url(../../images/coachBG.jpg);
+.coach-section {
+    background-image: linear-gradient(0deg, rgba(36, 63, 86, 0.85), rgba(36, 63, 86, 0.85)), url(../../images/coachBG.jpg);
     background-position: 50% 50%;
 }
 
-.coach-section .content-body p{
+.coach-section .content-body p {
     font-size: 1.25rem;
     margin: 30px 13%;
 }
 
-.coach-section .content-body .d-flex-inline a{
+.coach-section .content-body .d-flex-inline a {
     margin: 0 10px 20px 0;
 }
 
@@ -333,38 +341,39 @@
     Program Section
 ======================================*/
 
-.program-button:hover{
-    background-color:var(--dark-color)!important;
-    border-color: var(--dark-color)!important;
-} 
+.program-button:hover {
+    background-color: var(--dark-color) !important;
+    border-color: var(--dark-color) !important;
+}
 
-.program-section .content-header h4{
+.program-section .content-header h4 {
     line-height: 1.2;
 }
 
-.program-section .row .col-md-4:first-child *{
+.program-section .row .col-md-4:first-child * {
     text-align: start;
 }
 
-.program-section .section-header{
+.program-section .section-header {
     font-size: 1.875rem;
 }
 
-.program-section .row .col-md-4:first-child span{
+.program-section .row .col-md-4:first-child span {
     font-size: 1.5rem;
 }
 
-.program-section .row .col-md-4:first-child p{
+.program-section .row .col-md-4:first-child p {
     font-size: 1.125rem;
     line-height: 1.8;
 }
 
-.program-section .row .counter,.program-section .row .counter-percent{
+.program-section .row .counter,
+.program-section .row .counter-percent {
     font-size: 3rem;
 }
 
 
-.program-section .row .col-md-3 p{
+.program-section .row .col-md-3 p {
     font-size: 1.125rem;
     line-height: 1.8;
 }
@@ -374,13 +383,13 @@
     Learn Section
 ======================================*/
 
-.learn-section{
-    background-image: linear-gradient(0deg, rgba(36,63,86,0.65), rgba(36,63,86,0.65)), url(../../images/learnSectionBg.jpg);
+.learn-section {
+    background-image: linear-gradient(0deg, rgba(36, 63, 86, 0.65), rgba(36, 63, 86, 0.65)), url(../../images/learnSectionBg.jpg);
     background-position: 50% 50%;
     font-family: var(--family-M);
 }
 
-.learn-section .row:nth-child(1) p{
+.learn-section .row:nth-child(1) p {
     font-size: 1.125rem;
     line-height: 1.8;
     color: #b3b3b3;
@@ -390,15 +399,15 @@
     color: white;
 }
 
-.learn-section .row:nth-child(2) h5{
+.learn-section .row:nth-child(2) h5 {
     font-size: 1.875rem;
 }
 
-.learn-section .row:nth-child(2) p{
+.learn-section .row:nth-child(2) p {
     font-size: 1.125rem;
 }
 
-.learn-section .num-box h1{
+.learn-section .num-box h1 {
     font-size: 4.5rem;
     font-weight: 700;
 }
@@ -408,77 +417,121 @@
     Team Section
 ======================================*/
 
-.team-section .section-header{
+.team-section .section-header {
     font-size: 3rem;
 }
 
-.team-section .row{
+.team-section .team-member {
     font-family: var(--family-OS);
     font-weight: 700;
+    cursor: pointer;
 }
 
-.team-section .team-img{
+.team-section .team-img {
     width: 240px;
     height: 240px;
 }
 
-.team-section .row p{
+.team-section .team-member p {
     font-size: 1.125rem;
     line-height: 1.8;
 }
 
-.team-section p.team-name{
+.team-section p.team-name {
     font-family: var(--family-M);
     font-size: 1.5rem;
 }
 
-.team-section .description{
+.team-section .description {
     font-weight: 300;
+}
+
+/*======================================
+    Team Modal
+======================================*/
+
+.team-modal {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;  
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    z-index: -999;
+    transform: scale(1.15);
+    transition:
+        transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+        opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.modal-active {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 999;
+    transform: scale(1);
+
+  transition:
+    transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+    opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.team-modal .modal-content {
+    padding: 30px;
+    background-color: white;
+    max-width: 500px;
+    height: fit-content;
+    border:10px double var(--green-color)
+}
+
+.modal-close {
+    cursor: pointer;
 }
 
 /*======================================
     Contact Section
 ======================================*/
 
-.contact-section input{
+.contact-section input {
     padding: 10px 12px;
     margin-bottom: 13px;
 }
 
-.contact-section .section-header{
+.contact-section .section-header {
     font-size: 2.25rem;
 }
 
-.contact-section .content-body p{
+.contact-section .content-body p {
     font-size: 1.5rem;
 }
 
-.contact-section .content-body span{
+.contact-section .content-body span {
     font-size: 1.125rem;
     line-height: 1.8;
 }
 
-.contact-section ul span{
+.contact-section ul span {
     padding-left: 1.5em;
 }
 
-.contact-section ul li{
+.contact-section ul li {
     font-size: 1.25rem;
     line-height: 2;
 }
 
-.contact-section ul li::before{
+.contact-section ul li::before {
     content: '✓';
 }
 
-.contact-btn{
+.contact-btn {
     background-color: #243f56;
     border: 5px solid #243f56;
     font-weight: 700;
     padding: 9px 43px 11px;
 }
 
-.contact-btn:hover{
+.contact-btn:hover {
     background-color: #292e33;
 }
 
@@ -486,35 +539,38 @@
     Media Queries
 ======================================*/
 
-@media (max-width: 991px){
-    .cover-section .section-header{
+@media (max-width: 1024px) {
+    .welcome-section .content-body p {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .cover-section .section-header {
         font-size: 2.625rem;
     }
 
-    .contact-section .content-body p{
+    .contact-section .content-body p {
         font-size: 1.375rem;
     }
 }
 
 
-@media (max-width: 575px){
-    .cover-section .section-header{
+@media (max-width: 575px) {
+    .cover-section .section-header {
         font-size: 2.25rem;
-    }
-
-   .welcome-section .content-body p{
-        width: 75%;
     }
 
     .welcome-section .section-header,
     .benefit-section .section-header,
     .coach-section .section-header,
     .learn-section .section-header,
-    .team-section .section-header{
+    .team-section .section-header {
         font-size: 1.875rem;
     }
 
-    .contact-section .vertical-center{
+    .contact-section .vertical-center {
         justify-content: start;
     }
 }
