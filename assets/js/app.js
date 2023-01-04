@@ -76,7 +76,6 @@ counters.forEach(counter => {
 const teamMembers = document.querySelectorAll('.row .team-member');
 const teamModal = document.querySelector('.team-modal');
 const modalClose = document.querySelector('.modal-close');
-let memberInfo = {};
 
 teamMembers.forEach(member => {
     member.addEventListener('click', () => {
