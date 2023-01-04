@@ -21,7 +21,6 @@ html {
 
 .section {
     padding: 4rem 0;
-    position: relative;
 }
 
 .green-bg {
@@ -73,7 +72,6 @@ html {
 .content-header>* {
     font-family: var(--family-M);
     line-height: 1.1 !important;
-    /*Important diqqet*/
     text-align: center;
     font-weight: 700;
 }
@@ -81,6 +79,11 @@ html {
 .content-body {
     font-family: var(--family-OS);
     line-height: 2;
+}
+
+.content-body p {
+    font-size: 1.125rem;
+    line-height: 1.8;
 }
 
 .vertical-center {
@@ -94,11 +97,163 @@ html {
 }
 
 /*======================================
+    Keyframes
+======================================*/
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0,100px, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0,-100px,0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeLeft {
+	from {
+		opacity: 0;
+		transform: translate3d(100px,0,0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeRight {
+	from {
+		opacity: 0;
+		transform: translate3d(-100px,0,0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes zoomIn {
+	from {
+		opacity: 0;
+		transform: scale(.6);
+	}
+	to {
+		opacity: 1;
+        transform: translateZ(0) scale(1);
+	}
+}
+
+@keyframes zoomInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0,-100px,0) scale(.6);
+	}
+	to {
+		opacity: 1;
+        transform: translateZ(0) scale(1);
+	}
+}
+
+@keyframes zoomInLeft {
+	from {
+		opacity: 0;
+		transform: translate3d(100px,0,0) scale(.6);
+	}
+	to {
+		opacity: 1;
+        transform: translateZ(0) scale(1);
+	}
+}
+
+/*======================================
+    Animations
+======================================*/
+.animation-start{
+    opacity: 0;
+}
+
+.fade {
+    animation-name: fade 1.5s;
+}
+
+.fade-up{
+    animation: fadeUp;
+}
+
+.fade-down{
+    animation: fadeDown;
+}
+
+.fade-left{
+    animation: fadeLeft;
+}
+
+.fade-right{
+    animation: fadeRight;
+}
+
+.zoom-in{
+    animation: zoomIn;
+}
+
+.zoom-in-down{
+    animation: zoomInDown;
+}
+
+.zoom-in-left{
+    animation: zoomInLeft;
+}
+
+.duration-1250{
+    animation-duration: 1250ms;
+}
+
+.duration-1500{
+    animation-duration: 1500ms;
+}
+
+.duration-1750{
+    animation-duration: 1750ms;
+}
+
+.delay-250{
+    animation-delay: 250ms;
+}
+
+.delay-500{
+    animation-delay: 500ms;
+}
+
+/*======================================
     Navbar
 ======================================*/
 
-.navbar .container {
-    justify-content: unset;
+.navbar {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .container .navbar-brand {
@@ -231,7 +386,7 @@ html {
     font-size: 1.875rem;
 }
 
-.card-section .cards .card-body {
+.cards .card-body {
     font-family: var(--family-OS);
     font-size: 1.125rem;
     line-height: 1.8;
@@ -255,8 +410,6 @@ html {
 ======================================*/
 
 .welcome-section .section-content {
-    /* border-left: 30px solid var(--green-color);
-    border-right: 30px solid var(--green-color); */
     position: relative;
 }
 
@@ -268,18 +421,55 @@ html {
     height: 452px;
     background-color: var(--green-color);
     bottom: 0;
-}
-
-.welcome-section .section-content::before {
     left: 0;
 }
 
 .welcome-section .section-content::after {
+    left: auto;
     right: 0;
 }
 
 .welcome-section .section-header {
     font-size: 3rem;
+}
+
+.welcome-section .slider-wrapper {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.welcome-section .slide {
+    display: none;
+}
+
+.welcome-section .slider-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    left: 0;
+}
+
+.slider-arrow.next {
+    left: auto;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.welcome-section .slider-arrow:hover {
+    transform: scale(1.5);
+    color: var(--green-color);
+    background-color: white;
+    border-radius: 50%;
 }
 
 .welcome-section .content-body p {
@@ -305,8 +495,6 @@ html {
 
 .benefit-section .cards .card p {
     color: #808080;
-    font-size: 1.125rem;
-    line-height: 1.8;
 }
 
 .benefit-section .cards>div:nth-child(even) * {
@@ -325,7 +513,9 @@ html {
 
 .coach-section {
     background-image: linear-gradient(0deg, rgba(36, 63, 86, 0.85), rgba(36, 63, 86, 0.85)), url(../../images/coachBG.jpg);
-    background-position: 50% 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .coach-section .content-body p {
@@ -362,22 +552,10 @@ html {
     font-size: 1.5rem;
 }
 
-.program-section .row .col-md-4:first-child p {
-    font-size: 1.125rem;
-    line-height: 1.8;
-}
-
 .program-section .row .counter,
 .program-section .row .counter-percent {
     font-size: 3rem;
 }
-
-
-.program-section .row .col-md-3 p {
-    font-size: 1.125rem;
-    line-height: 1.8;
-}
-
 
 /*======================================
     Learn Section
@@ -386,25 +564,16 @@ html {
 .learn-section {
     background-image: linear-gradient(0deg, rgba(36, 63, 86, 0.65), rgba(36, 63, 86, 0.65)), url(../../images/learnSectionBg.jpg);
     background-position: 50% 50%;
+    background-repeat: no-repeat;
     font-family: var(--family-M);
 }
 
 .learn-section .row:nth-child(1) p {
-    font-size: 1.125rem;
-    line-height: 1.8;
     color: #b3b3b3;
-}
-
-.learn-section .row:nth-child(2) {
-    color: white;
 }
 
 .learn-section .row:nth-child(2) h5 {
     font-size: 1.875rem;
-}
-
-.learn-section .row:nth-child(2) p {
-    font-size: 1.125rem;
 }
 
 .learn-section .num-box h1 {
@@ -432,11 +601,6 @@ html {
     height: 240px;
 }
 
-.team-section .team-member p {
-    font-size: 1.125rem;
-    line-height: 1.8;
-}
-
 .team-section p.team-name {
     font-family: var(--family-M);
     font-size: 1.5rem;
@@ -456,7 +620,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100%;  
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 0;
     z-index: -999;
@@ -472,9 +636,9 @@ html {
     z-index: 999;
     transform: scale(1);
 
-  transition:
-    transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946),
-    opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+        transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+        opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
 }
 
 .team-modal .modal-content {
@@ -482,7 +646,7 @@ html {
     background-color: white;
     max-width: 500px;
     height: fit-content;
-    border:10px double var(--green-color)
+    border: 10px double var(--green-color)
 }
 
 .modal-close {
@@ -538,6 +702,13 @@ html {
 /*======================================
     Media Queries
 ======================================*/
+
+@media (min-width:1024px) {
+    .welcome-section .section-content::before,
+    .welcome-section .section-content::after {
+        height: -webkit-fill-available;
+    }
+}
 
 @media (max-width: 1024px) {
     .welcome-section .content-body p {

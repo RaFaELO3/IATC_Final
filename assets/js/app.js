@@ -1,3 +1,56 @@
+/*======================================
+    Animation
+======================================*/
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {       
+            entry.target.classList.add(entry.target.dataset.anime)
+            let time = entry.target.dataset.delay == undefined ? 0 : entry.target.dataset.delay;
+            setTimeout(() => {
+                entry.target.classList.remove('animation-start')
+            },time)
+        }
+    });
+});
+
+const animations = document.querySelectorAll('.animation-start'); 
+
+animations.forEach(animation => {
+    observer.observe(animation);
+})
+
+/*======================================
+    Welcome Slider
+======================================*/
+
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+function showSlides(n) {
+    var slides = document.getElementsByClassName("slide");
+
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    else if (n < 1) {
+        slideIndex = slides.length
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        slides[i].classList.remove("show");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].classList.add("show");
+}
+
+/*======================================
+    Counters
+======================================*/
+
 const counters = document.querySelectorAll('.counter');
 
 counters.forEach(counter => {
@@ -16,6 +69,9 @@ counters.forEach(counter => {
     animate();
 });
 
+/*======================================
+    Modal
+======================================*/
 
 const teamMembers = document.querySelectorAll('.row .team-member');
 const teamModal = document.querySelector('.team-modal');
