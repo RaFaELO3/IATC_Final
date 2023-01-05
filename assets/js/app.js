@@ -9,7 +9,7 @@ const observer = new IntersectionObserver(entries => {
             // let time = entry.target.dataset.delay == undefined ? 0 : entry.target.dataset.delay;
             setTimeout(() => {
                 entry.target.classList.remove('animation-start')
-            },1000)
+            },1200)
         }
     });
 });
