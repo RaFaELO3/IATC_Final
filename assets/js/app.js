@@ -6,10 +6,10 @@ const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {       
             entry.target.classList.add(entry.target.dataset.anime)
-            let time = entry.target.dataset.delay == undefined ? 0 : entry.target.dataset.delay-10;
+            // let time = entry.target.dataset.delay == undefined ? 0 : entry.target.dataset.delay;
             setTimeout(() => {
                 entry.target.classList.remove('animation-start')
-            },300)
+            },1000)
         }
     });
 });
