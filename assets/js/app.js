@@ -78,7 +78,7 @@ const teamModal = document.querySelector('.team-modal');
 const modalClose = document.querySelector('.modal-close');
 
 teamMembers.forEach(member => {
-    member.addEventListener('click', () => {
+    member.children[5].addEventListener('click', () => {
         document.querySelector('.team-modal img').src = member.children[0].children[0].src;
         document.querySelector('.team-modal .team-name').innerText = member.children[1].innerText;
         document.querySelector('.team-modal .team-job').innerText = member.children[2].innerText;
