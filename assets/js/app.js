@@ -98,4 +98,3 @@ function toggleModal() {
     }
     teamModal.classList.toggle('modal-active');
 }
-
